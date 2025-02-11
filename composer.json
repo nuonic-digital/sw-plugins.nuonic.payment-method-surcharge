@@ -1,0 +1,56 @@
+{
+    "name": "nuonic/payment-method-surcharge",
+    "description": "Payment method surcharge",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "nuonic Digital GmbH & Co. KG",
+            "homepage": "https://nuonic.de"
+        }
+    ],
+    "extra": {
+        "copyright": "nuonic Digital GmbH & Co. KG",
+        "author": "nuonic Digital GmbH & Co. KG",
+        "shopware-plugin-class": "NuonicPaymentMethodSurcharge\\NuonicPaymentMethodSurcharge",
+        "label": {
+            "de-DE": "Zahlungsart-Aufschlag",
+            "en-GB": "Payment method surcharge"
+        },
+        "description": {
+            "de-DE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel diam mi. Quisque consectetur condimentum blandit. Integer nunc nisi, porttitor sed nunc bibendum, vestibulum.",
+            "en-GB": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel diam mi. Quisque consectetur condimentum blandit. Integer nunc nisi, porttitor sed nunc bibendum, vestibulum."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://nuonic.de",
+            "en-GB": "https://nuonic.de"
+        },
+        "supportLink": {
+            "de-DE": "https://nuonic.de",
+            "en-GB": "https://nuonic.de"
+        }
+    },
+    "require": {
+        "shopware/core": ">=6.6.0 <6.7.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1.2",
+        "friendsofphp/php-cs-fixer": "^3.66"
+    },
+    "autoload": {
+        "psr-4": {
+            "NuonicPaymentMethodSurcharge\\": "src/"
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse --memory-limit=2G",
+        "style-check": "php-cs-fixer check",
+        "style-fix": "php-cs-fixer fix"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}

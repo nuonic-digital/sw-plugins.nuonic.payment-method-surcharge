@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Payment method surcharge settings</title>
+        <title lang="de-DE">Zahlungsart-Aufschlag Einstellungen</title>
+
+        <component name="sw-entity-multi-id-select">
+            <name>paymentMethodIds</name>
+            <entity>payment_method</entity>
+            <label>Choose a payment method for the surcharge</label>
+            <label lang="de-DE">Zahlungsarten für Aufschlag wählen</label>
+        </component>
+
+        <input-field type="float">
+            <name>chargePercentage</name>
+            <label>Payment method charge percentage</label>
+            <label lang="de-DE">Aufschlag in Prozent</label>
+            <placeholder>0</placeholder>
+            <defaultValue>0</defaultValue>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="text">
+            <name>chargeLineItemLabel</name>
+            <label>Label of the surcharge line item</label>
+            <label lang="de-DE">Name der Aufschlags-Position</label>
+        </input-field>
+    </card>
+</config>

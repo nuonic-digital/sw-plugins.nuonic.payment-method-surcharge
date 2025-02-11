@@ -1,0 +1,5 @@
+{
+  "nuonicPaymentMethodSurcharge": {
+    "defaultLineItemLabel": "Zahlungsart-Aufschlag"
+  }
+}
