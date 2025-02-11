@@ -1,7 +1,4 @@
-name: Build extension
-permissions:
-  id-token: write
-  attestations: write
+name: Release to Store
 
 on:
   workflow_dispatch:
