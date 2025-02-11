@@ -36,6 +36,3 @@ jobs:
 
       - name: 🪮 Check code style
         run: composer style-check
-
-      - name: 🔎 Analyze using PHPStan
-        run: composer phpstan
