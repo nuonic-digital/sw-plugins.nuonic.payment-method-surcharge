@@ -18,14 +18,3 @@ jobs:
       accountUser: ${{ secrets.SHOPWARE_ACCOUNT_MACHINE_USER }}
       accountPassword: ${{ secrets.SHOPWARE_ACCOUNT_MACHINE_PASSWORD }}
       ghToken: ${{ secrets.GITHUB_TOKEN }}
-
-  sign:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: 'NuonicPaymentMethodSurcharge'
-      - uses: actions/attest-build-provenance@v1
-        with:
-          subject-path: 'NuonicPaymentMethodSurcharge.zip'
