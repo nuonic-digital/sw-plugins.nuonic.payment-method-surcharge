@@ -2,7 +2,7 @@
     "name": "nuonic/payment-method-surcharge",
     "description": "Payment method surcharge",
     "type": "shopware-platform-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "proprietary",
     "authors": [
         {
