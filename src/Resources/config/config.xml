@@ -10,6 +10,11 @@
             <entity>payment_method</entity>
             <label>Choose a payment method for the surcharge</label>
             <label lang="de-DE">Zahlungsarten für Aufschlag wählen</label>
+            <config>
+                <criteria>
+                    <equals field="active" value="1"/>
+                </criteria>
+            </config>
         </component>
 
         <input-field type="float">

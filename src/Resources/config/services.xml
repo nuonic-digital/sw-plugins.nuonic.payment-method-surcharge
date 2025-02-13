@@ -11,10 +11,14 @@
 
         <service id="NuonicPaymentMethodSurcharge\Core\Checkout\PaymentMethodChargeProcessor">
             <argument type="service" id="Shopware\Core\Checkout\Cart\Price\PercentagePriceCalculator"/>
-            <argument type="service" id="NuonicPaymentMethodSurcharge\Config\PluginConfigService"/>
             <argument type="service" id="Shopware\Core\Checkout\Cart\LineItemFactoryRegistry" />
+            <tag name="shopware.cart.processor" priority="100" />
+        </service>
+
+        <service id="NuonicPaymentMethodSurcharge\Core\Checkout\PaymentMethodChargeCollector">
+            <argument type="service" id="NuonicPaymentMethodSurcharge\Config\PluginConfigService"/>
             <argument type="service" id="translator" />
-            <tag name="shopware.cart.processor" />
+            <tag name="shopware.cart.collector" />
         </service>
     </services>
 </container>
