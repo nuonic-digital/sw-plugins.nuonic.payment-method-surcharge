@@ -54,6 +54,7 @@ readonly class PaymentMethodChargeProcessor implements CartProcessorInterface
         $lineItem->setGood(false);
         $lineItem->setStackable(false);
         $lineItem->setRemovable(false);
+        $lineItem->setShippingCostAware(false);
 
         $definition = new PercentagePriceDefinition($lineItemData['chargePercentage']);
 
