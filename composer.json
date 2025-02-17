@@ -2,7 +2,7 @@
     "name": "nuonic/payment-method-surcharge",
     "description": "Payment method surcharge",
     "type": "shopware-platform-plugin",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": "proprietary",
     "authors": [
         {
@@ -19,8 +19,8 @@
             "en-GB": "Payment method surcharge"
         },
         "description": {
-            "de-DE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel diam mi. Quisque consectetur condimentum blandit. Integer nunc nisi, porttitor sed nunc bibendum, vestibulum.",
-            "en-GB": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel diam mi. Quisque consectetur condimentum blandit. Integer nunc nisi, porttitor sed nunc bibendum, vestibulum."
+            "de-DE": "Sofern du für bestimmte Zahlungsarten einen prozentualen Aufschlag des Warenkorbs erheben möchtest, kannst du dies mit dieser Erweiterung einfach und unkompliziert tun.",
+            "en-GB": "If you want to add a percentage surcharge to the shopping cart for certain payment methods, you can do this with this extension. Use the extensions settings to setup your surchage."
         },
         "manufacturerLink": {
             "de-DE": "https://nuonic.de",

@@ -1,14 +1,84 @@
+filename: .shopware-extension.yml
+store:
+    availabilities:
+        - German
+        - International
+    default_locale: en_GB
+    localizations:
+        - de_DE
+        - en_GB
+    categories:
+        - Bestellprozess
+    type: extension
+    icon: src/Resources/store/icon.png
+    automatic_bugfix_version_compatibility: false
+    description:
+        de: file:src/Resources/store/description.de.html
+        en: file:src/Resources/store/description.en.html
+    installation_manual:
+        de: file:src/Resources/store/installation_manual.de.html
+        en: file:src/Resources/store/installation_manual.en.html
+    tags:
+        de:
+            - Zahlungsartenaufschlag
+            - Prozentsatz
+            - Checkout-Anpassung
+            - B2B-Shops
+            - Statistische Aufschläge
+        en:
+            - payment methods surcharge
+            - percentage surcharge
+            - checkout item display
+            - B2B store
+            - static surcharge
+    videos:
+        de: []
+        en: []
+    highlights:
+        de:
+            - Schneller und zuverlässiger Support durch nuonic Digital
+            - Erweiterung durch uns, bei fehlendem Feature möglich
+        en:
+            - Schneller und zuverlässiger Support durch nuonic Digital
+            - Erweiterung durch uns, bei fehlendem Feature möglich
+    features:
+        de:
+            - Es ist möglich, mehr als eine Zahlungsart auszuwählen
+            - Einfach Konfiguration durch Multi-Select und Prozentwert für den Aufschlag
+            - Der Aufschlag wird als eigene Position im Warenkorb hinterlegt
+            - Kein Einfluss auf die Performance im Checkout
+        en:
+            - It is possible to select more than one payment method
+            - Simple configuration through multi-select and percentage value for the surcharge
+            - The surcharge is stored as a separate item in the shopping cart
+            - No influence on the performance in the checkout
+    faq:
+        de:
+            - question: Wo kann ich den Aufschlag für die Zahlungsart auswählen?
+              answer: Innerhalb der Konfiguration für das Plugin hast du die Option, eine oder mehr Zahlungsarten auszuwählen, für die der Aufschlag gelten soll. Hier kannst du einfach mittels Klicken auf die Zahlungsart die gewünschten Zahlungsarten auswählen.
+            - question: Ist es möglich, verschiedene Aufschläge für die Zahlungsarten zu definieren?
+              answer: Aktuell ist es nur möglich, einen definierten Aufschlag für alle ausgewählten Zahlungsarten zu hinterlegen. Sofern du dir dieses Feature von uns wünschst, sende uns gerne eine E-Mail an support@nuonic.de
+            - question: Was kann ich tun, wenn mir eine Funktion fehlt?
+              answer: Wenn dir eine Funktion innerhalb eines unserer Plugins fehlt, kannst du uns eine E-Mail an support@nuonic.de senden. Wir melden uns dann umgehend mit einem Vorschlag für die Umsetzung.
+        en:
+            - question: Where can I select the surcharge for the payment method?
+              answer: Within the configuration for the plugin, you have the option to select one or more payment methods for which the surcharge should apply. Here you can simply click on the payment method to select the desired payment methods.
+            - question: Is it possible to define different surcharges for the payment methods?
+              answer: Currently it is only possible to add a defined surcharge for all selected payment methods. If you would like us to add this feature, please send us an email to support@nuonic.de
+            - question: What can I do if I am missing a function?
+              answer: If you are missing a function within one of our plugins, you can send us an email to support@nuonic.de. We will then get back to you immediately with a suggestion for implementation.
+    image_directory: src/Resources/store/images
 build:
-  zip:
-    composer:
-      enabled: true
-    assets:
-      enabled: true
-      enable_es_build_for_admin: false
-      enable_es_build_for_storefront: false
-      es_build_disable_sass: false
-      npm_strict: false
-    pack:
-      excludes: {}
+    zip:
+        composer:
+            enabled: true
+        assets:
+            enabled: true
+            enable_es_build_for_admin: false
+            enable_es_build_for_storefront: false
+            es_build_disable_sass: false
+            npm_strict: false
+        pack: {}
 changelog:
-  enabled: true
+    enabled: true
+validation: {}
